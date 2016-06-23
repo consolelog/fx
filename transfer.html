@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>f(x)</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <!-- <style>
+    .intro {
+      background-image: url('img/intro.png');
+      background-size: 100% auto;
+    }
+  </style> -->
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><a href="index.html">f(x)</a></span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+          <label class="mdl-button mdl-js-button mdl-button--icon"
+                 for="fixed-header-drawer-exp">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample"
+                   id="fixed-header-drawer-exp">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Menu</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content intro">
+      <div class="page-content">
+        <div class="mdl-grid">
+          <div class="mdl-cell">
+            <form action="#" role="application" class="transfer-form" id="transfer" name="transfer-form">
+              <legend><h2>I want to send money from</h2></legend>
+              <fieldset class="fieldset">
+                <label class="form-control is-vishidden" for="from-currency">from currency</label>
+                <div class="mdl-selectfield">
+                  <select class="form-control" id="from-currency" name="from-currency">
+                    <option value="AUD" selected>AUD (Australian Dollar)</option>
+                    <option value="USD">USD (US Dollar)</option>
+                    <option value="EUR">EUR (Euro)</option>
+                    <option value="GBP">GBP (British Pound)</option>
+                    <option value="NZD">NZD (New Zealand Dollar)</option>
+                    <option value="JPY">JPY (Japanese Yen)</option>
+                  </select>
+                </div>
+              </fieldset>
+              <fieldset class="mdl-textfield mdl-js-textfield form-control">
+                <input class="mdl-textfield__input" type="number" id="amount" value="10000">
+                <label class="mdl-textfield__label" for="amount">Amount</label>
+              </fieldset>
+              <br>
+              <legend>to</legend>
+              <fieldset class="fieldset">
+                <div class="mdl-selectfield">
+                  <label for="to-currency"></label>
+                  <select class="form-control" id="to-currency" name="to-currency">
+                    <option value="AUD">AUD (Australian Dollar)</option>
+                    <option value="USD" selected>USD (US Dollar)</option>
+                    <option value="EUR">EUR (Euro)</option>
+                    <option value="GBP">GBP (British Pound)</option>
+                    <option value="NZD">NZD (New Zealand Dollar)</option>
+                    <option value="JPY">JPY (Japanese Yen)</option>
+                  </select>
+                  <span>,</span>
+                </div>
+              </fieldset>
+              <legend><h4>that will cost me</h4></legend>
+              <fieldset class="mdl-textfield mdl-js-textfield form-control">
+                <span class="selected-currency"></span>
+                <input class="mdl-textfield__input" type="number" id="cost">
+              </fieldset>
+            </form>
+            <p class="disclaimer">* Indicative rate as at 4:15pm 23 Apr 2016</p>
+            <a id="payment" class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary mdl-js-ripple-effect" href="payment.html">Proceed with this quote</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/money.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

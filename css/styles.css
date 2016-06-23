@@ -1,0 +1,118 @@
+.is-vishidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.mdl-layout-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Material Design <select> element, css only
+ * https://codepen.io/pudgereyem/pen/PqBxQx
+ */
+select {
+    background-color: transparent;
+    width: 100%;
+    padding: 4px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.25);
+}
+/* Remove focus */
+select:focus {
+    outline: none;
+}
+/* Use custom arrow */
+.mdl-selectfield select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.mdl-selectfield {
+    position: relative;
+}
+.mdl-selectfield:after {
+    position: absolute;
+    bottom: .25em;
+    right: .5em;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: .375em solid transparent;
+    border-right: .375em solid transparent;
+    border-top: .5625em solid rgba(0,0,0,.25);
+    pointer-events: none;
+}
+
+/* Custom stylings */
+.transfer-form legend {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-right: .5em;
+}
+
+.form-control {
+    display: inline-block;
+    width: 200px;
+    padding-top: 20px;
+    font-size: 1em;
+}
+
+.form-control > * {
+    display: inline-block;
+}
+
+.fieldset,
+.mdl-selectfield {
+    display: inline;
+}
+
+.transfer-form .mdl-textfield {
+    padding-bottom: 0;
+}
+.mdl-textfield__label:after {
+    bottom: 0;
+}
+
+.mdl-card {
+    margin-bottom: 20px;
+}
+
+.demo-card-image--sarah.mdl-card {
+  background: url('http://www.radfaces.com/images/avatars/april-oneil.jpg') center / cover;
+}
+.demo-card-image--dummy.mdl-card {
+  background: url('https://pixabay.com/static/uploads/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png') center / cover;
+}
+.demo-card-image > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.mdl-card .mdl-badge {
+    float: right;
+}
+
+.demo-card--jeremy > .mdl-card__title {
+    background: url('https://pbs.twimg.com/profile_images/1903539737/image.jpg') bottom right no-repeat;
+    background-size: auto 100%;
+}
+
+.demo-card--lebron > .mdl-card__title {
+    background: url('http://graphics.wsj.com/six-degrees-of-lebron-james/img/LeBron_head.jpg') bottom right no-repeat;
+    background-size: auto 100%;
+}
+
+.demo-card--jeremy .mdl-badge:after {
+    background-color: #009688;
+}
